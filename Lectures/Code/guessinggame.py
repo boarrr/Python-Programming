@@ -9,13 +9,14 @@ randNum = random.randint(1, 10)
 guessed = False
 
 while (numGuesses != 0 and guessed == False):
-  userInput = int(input("Enter a number: "))
+  userInput = int(input("Enter a number between 1 and 10: "))
 
   if (userInput == randNum):
     print("You got it right, the number was", randNum)
     guessed = True
   else:
     numGuesses -= 1
+    print(f"Wrong! You have {numGuesses} guesses remaining!")
 
 if (numGuesses == 0):
-  print("You failed to guess the number correctly!")
+  print(f"You failed to guess the number correctly, it was {randNum}!")
