@@ -1,0 +1,12 @@
+Start Program
+	INPUT N
+	Total = 0
+	i = 0
+
+	WHILE i <= N
+		Total = Total + i
+		i = i + 1
+	ENDWHILE
+
+	PRINT Total
+ENDPROGRAM
