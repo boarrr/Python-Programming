@@ -1,0 +1,21 @@
+START
+  INPUT A
+
+  Len = A.length
+  i = 0
+  temp = A[0]
+
+  [1, 2, 3, 4]
+
+  WHILE i < Len - 1
+    A[i] = A[i + 1]
+    i += 1
+  ENDWHILE
+
+  A[Len - 1] = temp
+
+  OUTPUT A
+
+END
+
+
