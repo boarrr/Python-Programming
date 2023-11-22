@@ -1,0 +1,13 @@
+START
+  INPUT A
+  Len = len(A)
+  i = 1
+
+  WHILE i < Len - 1
+    IF A[i] > A[i - 1] AND A[i] > A[i + 1]
+      OUTPUT "Value" + A[i] + "Location" + i
+    ENDIF
+
+    i = i + 1
+  ENDWHILE
+END
