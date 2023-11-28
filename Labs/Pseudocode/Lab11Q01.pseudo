@@ -1,0 +1,16 @@
+START
+  INPUT A
+  i = 0
+  Len = LENGTH(A)
+  min = A[Len-1] - A[0]
+
+  WHILE i < Len - 1
+    IF A[i+1] - A[i] < min THEN
+      min = A[i+1] - A[i]
+    ENDIF
+
+    i = i + 1
+  ENDWHILE
+
+  RETURN min
+END
